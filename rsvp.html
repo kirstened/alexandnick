@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- Awesome Bootstrap Checkbox -->
+    <link href="css/awesome-bootstrap-checkbox.css" type="text/css" rel="stylesheet" />
+    <!-- Custom theme -->
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+
+    <!--Using jQuery and jQuery UI for display effects-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <title>Alex & Nick's Wedding</title>
+</head>
+
+<body class="rsvp">
+    <div class="page">
+        <!-- Hero & Header -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsible-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">Alex &amp; Nick</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="collapsible-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./rsvp.html" class="active">RSVP</a></li>
+                        <li><a href="./information.html">Information</a></li>
+                        <li><a href="./gifts.html">Gifts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Hero & Header -->
+
+        <!-- Content -->
+        <div class="container-content container">
+            <div class="content">
+                <h2>RSVP</h2>
+
+                <form id="rsvp-form" action="//formspree.io/alex.cardinal@gmail.com" method="post">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="hidden" name="_cc" value="nickeaddy@gmail.com">
+                    <input type="hidden" id="next" name="_next" value="//www.alexandnick.com/thanks.html">
+                    <input type="hidden" id="subject" name="_subject" value="Website RSVP">
+                    <div class="row rsvp-options">
+                        <hr class="top">
+                        <div>
+                            <div class="radio radio-rsvp">
+                                <input type="radio" id="accept" name="RSVP" value="Delightfully Accept" required>
+                                <label for="accept">Delightfully Accept</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="radio radio-rsvp">
+
+                                <input type="radio" id="decline" name="RSVP" value="Regretfully Decline" required>
+                                <label for="decline">Regretfully Decline</label>
+                            </div>
+                        </div>
+                        <hr class="bottom">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" class="form-control" id="first-name" name="First Name" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" class="form-control" id="last-name" name="Last Name" placeholder="" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="Email" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dietary-requirements">Dietary Requirements</label>
+                        <input type="text" class="form-control" id="dietary-requirements" name="Dietary Requirements" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" rows="3" id="message" name="Message" placeholder=""></textarea>
+                    </div>
+                    <div class="help-block">
+                        <p>WILL YOU NEED THE ARRANGED BUS?</p>
+                    </div>
+                    <div class="checkbox checkbox-rsvp">
+                        <input type="checkbox" id="parking" name="Parking" value="Yes">
+                        <label for="parking">Yes, please save me a seat</label>
+                    </div>
+
+                    <hr>
+
+                    <div class="help-block">
+                        <p>SELECT MEAL</p>
+                    </div>
+                    <div>
+                        <div class="radio radio-rsvp">
+                            <input type="radio" id="duck" name="Menu" value="yesDuck" required>
+                            <label for="duck">Duck</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="radio radio-rsvp">
+                            <input type="radio" id="beef" name="Menu" value="yesBeef" required>
+                            <label for="beef">Beef</label>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-large btn-rsvp">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            $(function() {
+                $("input[name='RSVP']").change(function() {
+                    $('#subject').val("Website RSVP: " + $(this).val());
+                    if ($(this).prop('id') == 'accept') {
+                        $("#next").val('//www.baileyandaidan.com/thanks.html')
+                        $("#guests").prop('required', true).prop('disabled', false);
+                        $("#dietary-requirements").prop('disabled', false);
+                        $("#beef").prop('disabled', false);
+                        $("#duck").prop('disabled', false);
+                    } else {
+                        $("#next").val('//www.baileyandaidan.com/sorry.html')
+                        $("#guests").removeAttr('required').prop('disabled', true);
+                        $("#dietary-requirements").prop('disabled', true);
+                        $("#beef").prop('checked', false).prop('disabled', true);
+                        $("#duck").prop('checked', false).prop('disabled', true);
+                    }
+                });
+            })
+        </script>
+        <!-- End Content -->
+
+        <!-- Footer -->
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 col-md-4">
+                        <div class="row">
+                            <ul class="nav col-md-6">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./rsvp.html">RSVP</a></li>
+                                <li><a href="./information.html">Information</a></li>
+                                <li><a href="./gifts.html">Gifts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8 contact">
+                        <div class="row hidden-xs">
+                            <div class="col-md-12"><h4>Contact</h4></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Bride</h5>
+                                <ul class="nav contact">
+                                    <li><a href="mailto:alex.cardinal@gmail.com" class="email">alex.cardinal@gmail.com</a></li>
+                                    <li><a href="tel:0064212612562" class="phone">+64 21 261 2562</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Groom</h5>
+                                <ul class="nav contact">
+                                    <li><a href="mailto:nickeaddy@gmail.com" class="email">nickeaddy@gmail.com</a></li>
+                                    <li><a href="tel:00642108114455" class="phone">+64 21 0811 4455</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+</body>
+</html>
