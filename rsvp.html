@@ -140,13 +140,13 @@
                 $("input[name='RSVP']").change(function() {
                     $('#subject').val("Website RSVP: " + $(this).val());
                     if ($(this).prop('id') == 'accept') {
-                        $("#next").val('//www.baileyandaidan.com/thanks.html')
+                        $("#next").val('http://www.alexandnick.co.nz/thanks.html')
                         $("#guests").prop('required', true).prop('disabled', false);
                         $("#dietary-requirements").prop('disabled', false);
                         $("#beef").prop('disabled', false);
                         $("#duck").prop('disabled', false);
                     } else {
-                        $("#next").val('//www.baileyandaidan.com/sorry.html')
+                        $("#next").val('http://www.alexandnick.co.nz/sorry.html')
                         $("#guests").removeAttr('required').prop('disabled', true);
                         $("#dietary-requirements").prop('disabled', true);
                         $("#beef").prop('checked', false).prop('disabled', true);
