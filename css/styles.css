@@ -69,6 +69,10 @@ hr  {
     margin: 30px 0;
 }
 
+.padding-top {
+    padding-top:15px;
+}
+
 @media screen and (max-width: 800px) {
     h1 {
         font-size: 52px;
@@ -192,6 +196,7 @@ hr  {
     outline: 0 none;
 }
 
+
 label {
     text-transform: uppercase;
 }
@@ -200,6 +205,26 @@ label {
     padding-top: 10px;
     padding-bottom: 5px;
 }
+
+.form-group-new label {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.form-control-new {
+    width:300px;
+    border-radius: 0;
+    height:40px;
+    color: #5f6060;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #5f6060;
+    box-shadow: none;
+    outline: 0 none;
+}
+
 
 .checkbox-rsvp input[type="checkbox"]:checked + label::before,
 .checkbox-rsvp input[type="radio"]:checked + label::before {
